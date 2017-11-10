@@ -1,0 +1,6 @@
+<ul>
+  <li *ngFor="let l of list, let i = index"> {{l.firstName}} {{l.lastName}}
+    <a [routerLink] = "[i]" (mouseover)=onClicked(l)>User {{i}}</a>
+  </li>
+</ul>
+{{message}}
